@@ -113,154 +113,121 @@
     }
     .nav-list a:hover{opacity:.9; transform:translateY(-2px)}
 
-    /* Hero 主圖（黃色圓南瓜） */
-    .hero{
-      max-width:1100px;margin:20px auto;padding:0 16px;
-    }
-    .hero-img{
-      width:100%;
-      border-radius:10px;
-      overflow:hidden;
-      box-shadow:0 6px 18px rgba(0,0,0,0.08);
-    }
-    .hero-img img{display:block;width:100%;height:auto}
-
-    /* 下面的左右欄 */
-    .container{
-     max-width:1100px;margin:18px auto;padding:0 16px;display:grid;grid-template-columns:1fr 360px;gap:20px;
-    }
-
-    /* 左欄 Vegetables */
-    :root{
-  --dark-green: #778A50;
-  --pale-green: #EDF2C5;
-  --thumb-bg: #fbfff6;
-  --gap: 12px;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF2C5;
 }
 
-/* 區塊外框 */
-.veg-section{
-  max-width: 550px;
-  margin: 18px auto;
-  padding: 0 16px 18px;
+.article{
+    margin: 1% 5%;
 }
 
-/* 綠色標題條 */
-.veg-header{
-  display:inline-block;
-  background: var(--dark-green);
-  color: var(--pale-green);
-  font-weight: 800;
-  letter-spacing: 0.6px;
-  padding: 10px 18px;
-  border-radius: 8px;
-  margin-bottom: 14px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  width: 528px;
+.footer{
+    background-color: #778A50;
+    padding: 1%;
+    border-radius: 3px;
+    width: 100%;
 }
 
-/* 三張縮圖排列 */
-.veg-thumbs{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--gap);
+.nav{
+    background-color: #778A50;
+    border-radius: 3px;
+    margin: 0% 5%;
 }
 
-/* 單張縮圖樣式 */
-.thumb{
-  background: var(--thumb-bg);
-  /* border-radius: 10px; */
-  overflow: hidden;
-  text-align: center;
+.nav-list{
+    display: flex;
+    justify-content: start;
 }
 
-.thumb img{
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
+.nav-item{
+    
+    list-style: none;
+    display: flex;
+    margin-right: 4em;
 }
 
-.thumb figcaption{
-  padding: 10px 12px;
-  color: #333;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-/* Contact 區塊樣式 */
-:root{
-  --dark-green: #778A50;
-  --pale-green: #EDF2C5;
-  --card-bg: #fbfff6;
-  --muted: #444;
-  --radius: 10px;
+.nav-item a{
+    font-size: 16px;
+    font-weight:900;
+    color: #EDF2C5;
+    line-height: 150%;
+    text-decoration: none;
 }
 
-.contact-card{
-  max-width: 1100px;
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin: 14px 14px;
-  width: 528px; 
-  font-family: "Noto Sans",system-ui, -apple-system, "Segoe UI", Roboto,  Arial;
-}
-
-/* 綠色標題條 */
-.contact-header{
-  background: var(--dark-green);
-  color: var(--pale-green);
-  font-weight: 800;
-  padding: 14px 18px;
-  font-size: 1.05rem;
-  letter-spacing: 0.6px;
-}
-
-/* 內容區 */
-.contact-body{
-  padding: 14px 18px;
-  color: var(--muted);
-  line-height: 1.5;
-  font-size: 0.97rem;
-}
-
-/* 分隔線 */
-.contact-sep{
-  border: none;
-  height: 1px;
-  background: rgba(0,0,0,0.07);
-  margin: 12px 0;
-}
-:root{
-    --dark-green: #778A50;
-    --pale-green: #EDF2C5;
-    --beige: #F5F3E8;
-  }
-
-  .site-footer { background: var(--pale-green); }
-
-  .footer-bar{
-    background:var(--dark-green);
-      margin-top:6px;
-      border-radius:8px;
-      height:var(--nav-height);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:0 12px;
-      width:1100px;
-  }
-
-  .footer-bar p{
+h1{
+    font-size: 44px;
+    font-weight: 900;
+    color: #778A50;
     margin: 0;
-    font-family:  "Noto Sans",system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-    font-size: 0.95rem;
-    font-weight: 200;
-    letter-spacing: 0.2px;
-    color:var(--white);
-  }
+}
 
+h2{
+    font-size: 16px;
+    font-weight:900;
+    color: #EDF2C5;
+    line-height: 150%;
+}
+
+.content-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5% ;
+    margin-bottom: 10%;
+}
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title{
+    background-color: #778A50;
+    padding: 1em 2em;
+    border-radius: 3px;
+}
+
+.content-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.content-imgs img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-block{
+    background-color: #F7FBDA;
+    
+    padding: 0.5em 1em;
+    flex: 100%;
+}
+
+.content-text{
+    font-size: 12px;
+    color: #7D7D7D;
+    line-height: 150%;
+}
+
+
+.info{
+    font-size: 12px;
+    text-align: center;
+    color: #EDF2C5;
+}
+
+.hline{
+    border-bottom: 1px solid #7D7D7D;
+}
+.vline{
+    border-left: 1px solid #778A50;
+}
+.main-img{
+    width: 100%;
+}
 
   </style>
 </head>
@@ -299,55 +266,31 @@
       </ul>
     </nav>
   </header>
-  <!-- Hero 圖 -->
-  <section class="hero">
-    <div class="hero-img">
-      <img src="pumpkin.png" alt="Yellow round squash">
-    </div>
-  </section>
 
-  <!-- 內容：左 Vegetables / 右 Contact -->
-  <div class="container">
-    <!-- Vegetables 區塊 -->
-<section class="veg-section" aria-labelledby="veg-title">
-  <div class="veg-header" id="veg-title">Vegetables</div>
-
-  <div class="veg-thumbs">
-    <figure class="thumb">
-      <img src="carrot.png" alt="Carrots">
-    </figure>
-
-    <figure class="thumb">
-      <img src="corn.png" alt="Corn">
-    </figure>
-
-    <figure class="thumb">
-      <img src="pepper.png" alt="Yellow peppers">
-    </figure>
-  </div>
-</section>
-
-    <!-- Contact 區塊 -->
-<section class="contact-card" aria-labelledby="contact-title">
-  <div class="contact-header" id="contact-title">Contact</div>
-
-  <div class="contact-body">
-    <p>
-      For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we’ll be happy to help.
-    </p>
-
-    <hr class="contact-sep">
-
-    <p>E-mail : Vegetables@aaabbccc.com</p>
-    <p>PHONE :+886-123-456-789</p>
-  </div>
-</section>
-
-  <!-- Footer -->
-<footer class="site-footer" role="contentinfo">
-  <div class="footer-bar">
-    <p class="copyright">Copyrights 2017 Vegetables cise / Design by Vegetables</p>
-  </div>
+  <article class="article">
+    <img class="main-img" src="pumpkin.png">
+        <div class="content-layout">
+            <div class="content-area">
+                <h2 class="content-title">Vegetables</h2>
+                <div class="content-imgs">
+                    <img src="carrot.png">
+                    <img src="corn.png">
+                    <img src="pepper.png">
+                </div>
+            </div>
+            <div class="content-area">
+                <h2 class="content-title">Contact</h2>
+                <div class="content-block">
+                    <p class="content-text">For any questions or suggestions about Vegetables, Vegetables Club or your online order you can contact Vegetables Customer Service by phone, email or post and we'll be happy to help.</p>
+                    <div class="hline">
+                    </div>
+                    <p class="content-text">E-mail : Vegetables@aaabbccc.com <br> PHONE : +886-123-456-789</p>
+                </div>
+            </div>
+        </div>
+    </article>
+<footer class="footer">
+    <p class="info">Copyrights 2017 Vegetables cise / Design by Vegetables</p>
 </footer>
 
 
